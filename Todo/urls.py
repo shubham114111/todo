@@ -19,5 +19,9 @@ from todo_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('signup/', views.usersignup, name="usersignup")
+    path('',views.home, name='home'),
+    path('signup/', views.signupform, name="signupform"),
+    path('current/', views.currenttask, name="currenttask"),
+    path('logout/', views.logoutform, name='logoutform'),
+    path('login/', views.loginform, name='loginform')
 ]
